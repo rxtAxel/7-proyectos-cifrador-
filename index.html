@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cifrador secreto</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div class="hoja">
+        <h1>Mi cifrador secreto</h1>
+        <p class="sub">(escribe algo y nadie lo va a entender jaja)</p>
+
+        <label for="mensaje">Tu mensaje:</label>
+        <textarea id="mensaje" rows="3" placeholder="escribe aqui..." spellcheck="false"></textarea>
+
+        <div class="fila">
+            <button id="btn-modo">Modo: CIFRAR</button>
+            <button id="btn-dado">numero random</button>
+        </div>
+
+        <label for="rango">Desplazamiento: <b id="num">3</b></label>
+        <input type="range" id="rango" min="1" max="26" value="3">
+
+        <p class="mini">Así queda mi alfabeto secreto:</p>
+        <pre id="tabla"></pre>
+
+        <label>Resultado:</label>
+        <div id="resultado">...</div>
+
+        <button id="btn-copiar">copiar resultado</button>
+        <p id="aviso"></p>
+    </div>
+</body>
+</html>
